@@ -313,6 +313,9 @@ class NodeDB
     /// pick a provisional nodenum we hope no one is using
     void pickNewNodeNum();
 
+    /// DANI 110925 TODO add ability to call externally
+    void setNodeNum(uint32_t nodeNum);
+
     /// read our db from flash
     void loadFromDisk();
 
