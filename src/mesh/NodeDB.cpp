@@ -1122,6 +1122,7 @@ void NodeDB::pickNewNodeNum()
     LOG_DEBUG("Use nodenum 0x%x ", nodeNum);
 
     myNodeInfo.my_node_num = nodeNum;
+    myNodeInfo.my_node_num = 0xdeadbeef; // TODO add function to set arbitrary
 }
 
 /** Load a protobuf from a file, return LoadFileResult */
